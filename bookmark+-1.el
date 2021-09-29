@@ -3526,7 +3526,7 @@ contain a `%s' construct, so that it can be passed along with FILE to
                             (error "Invalid bookmark-file")))
             end    (and start
                         (or (save-excursion (goto-char start) (and (looking-at ")") start)) ; Bmk list = ().
-                            (save-excursion (goto-char (point-max)) (re-search-backward "^)" nil t))
+                            (save-excursion (goto-char (point-max)) (re-search-backward "^ *)" nil t))
                             (error "Invalid bookmark-file"))))
       (if (not start)                   ; New file, no header yet.
           (goto-char 2)
