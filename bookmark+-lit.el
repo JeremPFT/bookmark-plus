@@ -58,7 +58,7 @@
 ;;
 ;;    (The commentary links in #1 and #3 work only if you have library
 ;;    `bookmark+-doc.el' in your `load-path'.)
- 
+
 ;;(@> "Index")
 ;;
 ;;  Index
@@ -79,7 +79,7 @@
 ;;    (@> "Menu-List (`*-bmenu-*') Commands")
 ;;    (@> "General Highlight Commands")
 ;;    (@> "Other Functions")
- 
+
 ;;(@* "Things Defined Here")
 ;;
 ;;  Things Defined Here
@@ -207,10 +207,10 @@
 
 
 (eval-when-compile
- (or (condition-case nil
-         (load-library "bookmark+-mac") ; Use load-library to ensure latest .elc.
-       (error nil))
-     (require 'bookmark+-mac)))         ; Require, so can load separately if not on `load-path'.
+  (or (condition-case nil
+          (load-library "bookmark+-mac") ; Use load-library to ensure latest .elc.
+        (error nil))
+      (require 'bookmark+-mac)))         ; Require, so can load separately if not on `load-path'.
 ;; bmkp-define-show-only-command
 
 
@@ -245,31 +245,31 @@
 (defvar bmkp-this-file/buffer-cycle-sort-comparer) ; In `bookmark+-1.el'.
 (defvar fringe-bitmaps)                 ; Built-in for Emacs 22+.
 
- 
+
 ;;(@* "Faces (Customizable)")
 ;;; Faces (Customizable) ---------------------------------------------
 
 (defface bmkp-light-autonamed
-    '((((background dark)) (:background "#00004AA652F1")) ; a dark cyan
-      (t (:background "misty rose")))   ; a light pink
+  '((((background dark)) (:background "#00004AA652F1")) ; a dark cyan
+    (t (:background "misty rose")))   ; a light pink
   "*Face used to highlight an autonamed bookmark (except in the fringe)."
   :group 'bookmark-plus :group 'faces)
 
 (defface bmkp-light-autonamed-region
-    '((((background dark)) (:background "#22225F5F2222")) ; a dark green
-      (t (:background "plum")))   ; a light magenta
+  '((((background dark)) (:background "#22225F5F2222")) ; a dark green
+    (t (:background "plum")))   ; a light magenta
   "*Face used to highlight an autonamed bookmark (except in the fringe)."
   :group 'bookmark-plus :group 'faces)
 
 (when (fboundp 'fringe-columns)
   (defface bmkp-light-fringe-autonamed
-      '((((background dark)) (:background "#B19E6A64B19E")) ; a dark magenta
-        (t (:background "#691DC8A2691D"))) ; a medium green
+    '((((background dark)) (:background "#B19E6A64B19E")) ; a dark magenta
+      (t (:background "#691DC8A2691D"))) ; a medium green
     "*Face used to highlight an autonamed bookmark in the fringe."
     :group 'bookmark-plus :group 'faces)
   (defface bmkp-light-fringe-non-autonamed
-      '((((background dark)) (:background "#691DC8A2691D")) ; a medium green
-        (t (:foreground "Black" :background "Plum"))) ; a light magenta
+    '((((background dark)) (:background "#691DC8A2691D")) ; a medium green
+      (t (:foreground "Black" :background "Plum"))) ; a light magenta
     "*Face used to highlight a non-autonamed bookmark in the fringe."
     :group 'bookmark-plus :group 'faces))
 
@@ -279,14 +279,14 @@ This face must be combinable with face `bmkp-t-mark'."
   :group 'bookmark-plus :group 'faces)
 
 (defface bmkp-light-non-autonamed
-    '((((background dark)) (:background "#B19E6A64B19E")) ; a dark magenta
-      (t (:background "DarkSeaGreen1"))) ; a light green
+  '((((background dark)) (:background "#B19E6A64B19E")) ; a dark magenta
+    (t (:background "DarkSeaGreen1"))) ; a light green
   "*Face used to highlight a non-autonamed bookmark (except in the fringe)."
   :group 'bookmark-plus :group 'faces)
 
 (defface bmkp-light-non-autonamed-region
-    '((((background dark)) (:background "#BFBF1F1F2F2F")) ; a dark red
-      (t (:background "turquoise")))
+  '((((background dark)) (:background "#BFBF1F1F2F2F")) ; a dark red
+    (t (:background "turquoise")))
   "*Face used to highlight a non-autonamed bookmark (except in the fringe)."
   :group 'bookmark-plus :group 'faces)
 
@@ -301,7 +301,7 @@ This face must be combinable with face `bmkp-t-mark'."
 ;;      :family     "Courier"))
 ;;   "Face for mouseover tooltip content for highlighted bookmarks."
 ;;   :group 'bookmark-plus :group 'faces :group 'tooltip)
- 
+
 ;;(@* "User Options (Customizable)")
 ;;; User Options (Customizable) --------------------------------------
 
@@ -437,7 +437,7 @@ annotation if there is one, or the full description if not.
 To prevent showing any tooltip you can use a function, such as
 `ignore', that returns nil."
   :type 'function :group 'bookmark-plus :group 'tooltip)
- 
+
 ;;(@* "Internal Variables")
 ;;; Internal Variables -----------------------------------------------
 
@@ -446,7 +446,7 @@ To prevent showing any tooltip you can use a function, such as
 
 (defvar bmkp-non-autonamed-overlays nil
   "Overlays used to highlight non-autonamed bookmarks.")
- 
+
 ;;(@* "Functions")
 ;;; Functions --------------------------------------------------------
 
@@ -575,7 +575,7 @@ last non-nil value if nil."
                       (if bmkp-auto-light-when-jump
                           (upcase (symbol-name bmkp-auto-light-when-jump))
                         "OFF"))))
-                                        
+
 ;;;###autoload (autoload 'bmkp-lighted-jump "bookmark+")
 (defun bmkp-lighted-jump (bookmark-name &optional flip-use-region-p) ; `C-x j h'
   "Jump to a highlighted bookmark.
@@ -731,7 +731,7 @@ last non-nil value if nil."
                       (if bmkp-auto-light-when-set
                           (upcase (symbol-name bmkp-auto-light-when-set))
                         "OFF"))))
-                                        
+
 ;;;###autoload (autoload 'bmkp-set-lighting-for-bookmark "bookmark+")
 (defun bmkp-set-lighting-for-bookmark (bookmark-name style face when &optional msgp light-now-p) ; Not bound
   "Set the `lighting' entry for bookmark BOOKMARK-NAME.

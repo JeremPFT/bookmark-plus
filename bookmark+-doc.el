@@ -48,7 +48,7 @@
 ;;
 ;;    2. From the Emacs-Wiki Web site:
 ;;       https://www.emacswiki.org/emacs/BookmarkPlus.
-;;    
+;;
 ;;    3. From the Bookmark+ group customization buffer:
 ;;       `M-x customize-group bookmark-plus', then click link
 ;;       `Commentary'.
@@ -106,7 +106,7 @@
 ;;      `Bookmark+' menu).
 ;;
 ;;      Again, sorry for this inconvenience.
- 
+
 ;;(@> "Index")
 ;;
 ;;  Index
@@ -182,7 +182,7 @@
 ;;    (@> "Use Bookmark+ with Icicles")
 ;;    (@> "Bookmark Compatibility with Vanilla Emacs (`bookmark.el')")
 ;;    (@> "New Bookmark Structure")
- 
+
 ;;(@* "Documentation")
 ;;
 ;;  Documentation
@@ -252,7 +252,7 @@
 ;;  Bookmark+ has already been loaded.
 ;;
 ;;  See Also: (@> "Using Multiple Bookmark Files")
- 
+
 ;;(@* "Bookmark+ Features")
 ;;  ** Bookmark+ Features **
 ;;
@@ -372,7 +372,7 @@
 ;;
 ;;         - Some global variables.  To exclude variables normally
 ;;           saved, see option `bmkp-desktop-no-save-vars'.
-;; 	   - The current set of buffers and their associated files.
+;;         - The current set of buffers and their associated files.
 ;;           For each: its mode, point, mark, & some local variables.
 ;;
 ;;       If option `bmkp-desktop-jump-save-before-flag' is non-`nil',
@@ -718,7 +718,7 @@
 ;;       bookmark browser, and lets you bookmark and tag files on the
 ;;       fly.  See (@> "Use Bookmark+ with Icicles") and
 ;;       https://www.emacswiki.org/emacs/Icicles.
- 
+
 ;;(@* "Bookmark Basics")
 ;;  ** Bookmark Basics **
 ;;
@@ -874,7 +874,7 @@
 ;;  whose default value is `t', which means count all of a sequence of
 ;;  modifications together as one modification, as far as
 ;;  `bookmark-save-flag' is concerned.
- 
+
 ;;(@* "Different Types of Jump Commands")
 ;;  ** Different Types of Jump Commands **
 ;;
@@ -1016,7 +1016,7 @@
 ;;  `bmkp-choose-navlist-from-bookmark-list'.  To then jump to a
 ;;  bookmark from such a navigation list, use `C-x j N' or `C-x 4 j N'
 ;;  (`bmkp-jump-in-navlist' or `bmkp-jump-in-navlist-other-window').
- 
+
 ;;(@* "Bookmark Annotations")
 ;;  ** Bookmark Annotations **
 ;;
@@ -1102,7 +1102,7 @@
 ;;  In the `*Bookmark List*' display, `M-down' and `M-up' move the
 ;;  cursor down and up a line, respectively, but they also show the
 ;;  annotation, if any, of the bookmark at the new cursor location.
- 
+
 ;;(@* "Bookmark Tags")
 ;;  ** Bookmark Tags **
 ;;
@@ -1151,7 +1151,7 @@
 ;;  later.  If you prefer, you can customize option
 ;;  `bmkp-prompt-for-tags-flag' to non-`nil' so that you are prompted
 ;;  to add tags immediately whenever you set (create or update) a
-;;  bookmark.  
+;;  bookmark.
 ;;
 ;;  There are also some commands, such as `bmkp-tag-a-file' (`C-x x t
 ;;  + a') and `bmkp-untag-a-file' (`C-x x t - a'), that always prompt
@@ -1323,7 +1323,7 @@
 ;;  classifying tags, which you find more convenient or more powerful.
 ;;  And remember that tags can be more than just names.  They give you
 ;;  the full power of Lisp values - do with them whatever you like.
- 
+
 ;;(@* "Function, Sequence, Variable-List,... Bookmarks")
 ;;  ** Function, Sequence, Variable-List,... Bookmarks **
 ;;
@@ -1510,7 +1510,7 @@
 ;;  it outside the context of Icicles searching.  For this reason,
 ;;  these bookmarks are also shown with face `bmkp-no-jump' in the
 ;;  bookmark-list display.
- 
+
 ;;(@* "Editing Bookmarks")
 ;;  ** Editing Bookmarks **
 ;;
@@ -1681,7 +1681,7 @@
 ;;  properties listed in option `bmkp-properties-to-keep', which by
 ;;  default means properties `tags' and `annotation'.  Any existing
 ;;  tags and annotation are preserved when you update a bookmark.
- 
+
 ;;(@* "Bookmark-List Views - Saving and Restoring State")
 ;;  ** Bookmark-List Views - Saving and Restoring State **
 ;;
@@ -1788,7 +1788,7 @@
 ;;  command in a sequence, you need to first create a function
 ;;  bookmark that uses the command, and then include that bookmark in
 ;;  the sequence.)
- 
+
 ;;(@* "Bookmarking without Visiting the Target")
 ;;  ** Bookmarking without Visiting the Target **
 ;;
@@ -1813,7 +1813,7 @@
 ;;     music file.  "Jumping" to the bookmark performs an operation
 ;;     appropriate to the file - for example, playing music.
 ;;
-;; 
+;;
 ;;(@* "Bookmarking a File or a URL")
 ;;  *** Bookmarking a File or a URL ***
 ;;
@@ -1825,7 +1825,7 @@
 ;;  name.  (In general, the keys `f' and `u' are used in key sequences
 ;;  for file and URL bookmarks, respectively.)
 ;;
-;;  
+;;
 ;;(@* "Bookmarking the Marked Files in Dired")
 ;;  *** Bookmarking the Marked Files in Dired ***
 ;;
@@ -1864,7 +1864,7 @@
 ;;  to the bookmark-file bookmark simply loads its bookmarks into the
 ;;  current set of bookmarks.
 ;;
-;;  
+;;
 ;;(@* "Bookmarking Compilation, Grep, and Occur Hits")
 ;;  *** Bookmarking Compilation, Grep, and Occur Hits ***
 ;;
@@ -2202,7 +2202,7 @@
 ;;  you get multi-command versions of each of these bookmark commands,
 ;;  which means that you can visit more than one file per command
 ;;  invocation.)
- 
+
 ;;(@* "Tagging Files")
 ;;  ** Tagging Files **
 ;;
@@ -2320,7 +2320,7 @@
 ;;  A file or directory bookmark can have any number of tags, and
 ;;  multiple such bookmarks can have the same tag.  You can sort,
 ;;  show/hide, or mark files and directories based on their tags.
- 
+
 ;;(@* "Using Multiple Bookmark Files")
 ;;  ** Using Multiple Bookmark Files **
 ;;
@@ -2499,7 +2499,7 @@
 ;;  bookmark file for the marked files is `/foo/bar/.emacs.bmk'.  But
 ;;  the new bookmark-file bookmark created is recorded in the current
 ;;  bookmark file, whatever that might be (e.g. `~/.emacs.bmk').
- 
+
 ;;(@* "The Bookmark List Display")
 ;;  ** The Bookmark List Display **
 ;;
@@ -3024,7 +3024,7 @@
 ;;
 ;;  See also (@> "Use Bookmark+ with Icicles") - the same technique is
 ;;  used in `Icicles' for sorting bookmarks as completion candidates.
- 
+
 ;;(@* "Bookmarks for Specific Files or Buffers")
 ;;  ** Bookmarks for Specific Files or Buffers **
 ;;
@@ -3058,7 +3058,7 @@
 ;;  a particular file or buffer whose name you provide (with
 ;;  completion).
 ;;
-;;  * `= f M' and `= b M' - mark 
+;;  * `= f M' and `= b M' - mark
 ;;  * `= f S' and `= b S' - show (only)
 ;;
 ;;  For navigation, the following keys jump to bookmarks for
@@ -3074,7 +3074,7 @@
 ;;  particular interest, `C-x x ,' opens the bookmark-list display for
 ;;  only those bookmarks.  (`,' stands generally for "this-buffer" in
 ;;  Bookmark+ key bindings.)
- 
+
 ;;(@* "Cycling, Navigation List")
 ;;  ** "Cycling, Navigation List" **
 ;;
@@ -3201,7 +3201,7 @@
 ;;  bookmarks.  The two are separate.  You can, however, open the
 ;;  `*Bookmark List*' so that it reflects the bookmarks currently in
 ;;  the navigation list, using `C-x x N' (`bmkp-navlist-bmenu-list').
-;;  
+;;
 ;;
 ;;(@* "Cycling the Navigation List")
 ;; *** "Cycling the Navigation List" ***
@@ -3351,7 +3351,7 @@
 ;;  keys.  They are usually what you want.  They try first to work
 ;;  with bookmarks for the same file as the current buffer, if it is
 ;;  visiting a file.
- 
+
 ;;(@* "Autonamed Bookmarks - Easy Come Easy Go")
 ;; ** "Autonamed Bookmarks - Easy Come Easy Go" **
 ;;
@@ -3471,7 +3471,7 @@
 ;;  to show where it is.  You can use just `%s' for it if there is no
 ;;  risk of ambiguity.  (Use `%s' in `bmkp-autoname-bookmark-function'
 ;;  to insert the buffer name.)
- 
+
 ;;(@* "Temporary Bookmarks")
 ;;  ** Temporary Bookmarks **
 ;;
@@ -3578,7 +3578,7 @@
 ;;  In the bookmark-list display (buffer `*Bookmark List*'), temporary
 ;;  bookmarks are indicated with the mark `X' in the same column where
 ;;  the annotation mark `a' would otherwise appear.
- 
+
 ;;(@* "Automatic Bookmarking")
 ;;  ** Automatic Bookmarking **
 ;;
@@ -3731,7 +3731,7 @@
 ;;  If you use library `info+.el' then you have this complementary
 ;;  ability save your Info history list persistently.  Just enable
 ;;  minor mode `Info-persist-history-mode'.
- 
+
 ;;(@* "Highlighting Bookmark Locations")
 ;;  ** Highlighting Bookmark Locations **
 ;;
@@ -3744,7 +3744,7 @@
 ;;  might fall somewhere between.  It depends on what kind of
 ;;  bookmarks you have and how you use them.  Bookmark+ lets you
 ;;  choose.  By default, no bookmarks are highlighted.
- 
+
 ;;(@* "Defining How to Highlight")
 ;;  ** Defining How to Highlight **
 ;;
@@ -3897,7 +3897,7 @@
 ;;
 ;;  Be aware that, depending on the setting, highlighting can take a
 ;;  while.
- 
+
 ;;(@* "Using Highlighted Bookmarks")
 ;;  ** Using Highlighted Bookmarks **
 ;;
@@ -3929,7 +3929,7 @@
 ;;
 ;;  * `C-x x C-down', `C-x x C-up' - Cycle to the next and previous
 ;;                                   highlighted bookmark.
- 
+
 ;;(@* "Bookmark Links")
 ;;  ** Bookmark Links **
 ;;
@@ -3991,7 +3991,7 @@
 ;;  prompt.  In Org mode you can use the usual Org key bindings to
 ;;  follow the link.  In any mode you can use standard Org command
 ;;  `org-open-at-point-global' (not bound to a key by default).
- 
+
 ;;(@* "Bookmark Menus")
 ;;  ** Bookmark Menus **
 ;;
@@ -4021,7 +4021,7 @@
 ;;  items to jump to each bookmark in the file/buffer.  For Imenu,
 ;;  display of the menu is controlled by option
 ;;  `imenup-show-bookmarks-flag'.
- 
+
 ;;(@* "Use Bookmark+ with Icicles")
 ;;  ** Use Bookmark+ with Icicles **
 ;;
@@ -4149,7 +4149,7 @@
 ;;  results using different bookmarks.  You can "jump" to an Icicles
 ;;  search-hits bookmark during any Icicles search, whether you search
 ;;  a file, a buffer, multiple files, or multiple buffers.
- 
+
 ;;(@* "Bookmark Compatibility with Vanilla Emacs (`bookmark.el')")
 ;;  ** Bookmark Compatibility with Vanilla Emacs (`bookmark.el') **
 ;;
@@ -4251,7 +4251,7 @@
 ;;  full snapshots you create of the bookmark-list display state using
 ;;  command `bmkp-bmenu-define-full-snapshot-command' (`C-c C-C', aka
 ;;  `C-c C-S-c').  See (@> "State-Restoring Commands and Bookmarks").
- 
+
 ;;(@* "New Bookmark Structure")
 ;;  ** New Bookmark Structure **
 ;;
@@ -4286,4 +4286,3 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; bookmark+-doc.el ends here
-

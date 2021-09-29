@@ -126,7 +126,7 @@
 ;;      Again, sorry for this inconvenience.
 ;;
 ;;    ******************
- 
+
 ;;(@> "Index")
 ;;
 ;;  If you have library `linkd.el' and Emacs 22 or later, load
@@ -143,7 +143,7 @@
 ;;  (@> "CHANGE LOG FOR `bookmark+-lit.el'")
 ;;  (@> "CHANGE LOG FOR `bookmark+-mac.el'")
 ;;  (@> "CHANGE LOG FOR `bookmark+.el'")
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+-1.el'")
 ;;
 ;; 2020/08/21 dadams
@@ -223,7 +223,7 @@
 ;;     Added: bmkp-set-grep-command-bookmark.
 ;; 2020/01/31 dadams
 ;;     bmkp-dired-remember-*-marks:
-;;       Wrap dired--unhide with with-silent-modifications.  Thx to Tino Calancha. 
+;;       Wrap dired--unhide with with-silent-modifications.  Thx to Tino Calancha.
 ;; 2020/01/26 dadams
 ;;     Added: bmkp-annotated-cp.
 ;; 2020/01/25 dadams
@@ -257,7 +257,7 @@
 ;;     bmkp-set-kmacro-bookmark: Do not use read-kbd-macro.
 ;;     bmkp-repeat-command: Same as in zz-repeat-command in zones.el now.
 ;;       Require repeat.el.  Bind repeat-previous-repeated-command.
-;;     bmkp-(next|previous)(-*)-bookmark(-*)-repeat: Removed require of repeat.el. 
+;;     bmkp-(next|previous)(-*)-bookmark(-*)-repeat: Removed require of repeat.el.
 ;; 2019/05/21 dadams
 ;;     bmkp-dired-remember-*-marks: Updated per dired-remember-marks, for Emacs 27+.
 ;; 2019/05/19 dadams
@@ -364,7 +364,7 @@
 ;; 2017/02/26 dadams
 ;;     Added:
 ;;       bmkp-eww-rename-buffer, bmkp-eww-new-buffer-name, bmkp-eww-sans-pop-to-buffer,
-;;       bmkp-eww-buffer-handling (was ~bmkp-eww-allow-multiple-buffers-flag), 
+;;       bmkp-eww-buffer-handling (was ~bmkp-eww-allow-multiple-buffers-flag),
 ;;       bmkp-get-eww-mode-buffer, bmkp-eww-jumping-p, bmkp-eww-new-buf-name,
 ;;       bmkp-jump-eww-in-buffer-*eww* (was ~bmkp-jump-eww-only-one-buffer),
 ;;       bmkp-jump-eww-renaming-buffer (was ~bmkp-jump-eww-new-buffer), bmkp-info-auto-type,
@@ -672,7 +672,7 @@
 ;;     bmkp-describe-bookmark(-internals), bmkp-list-defuns-in-commands-file:
 ;;       Use bmkp-with-help-window, not with-output-to-temp-buffer (Emacs 24.4+ silliness).
 ;; 2014/04/05 dadams
-;;     Removed bmkp-create-dired-bookmarks-recursive: 
+;;     Removed bmkp-create-dired-bookmarks-recursive:
 ;;      Moved to dired+.el and renamed diredp-do-bookmark-dirs-recursive.
 ;; 2014/04/02 dadams
 ;;     bmkp-paste-replace-tags: Added Note to doc string about pasting an empty list of tags.
@@ -1510,7 +1510,7 @@
 ;;     Bind bmkp-url-jump*.  Replace W3M by URL in menu items.
 ;; 2010/07/14 dadams
 ;;     Created from bookmark+.el code.
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+-bmu.el'")
 ;;
 ;; 2021/08/18 dadams
@@ -1657,7 +1657,7 @@
 ;;     bmkp-bmenu-move-marked-to-bookmark-file:
 ;;       Just call bmkp-bmenu-copy-marked-to-bookmark-file.  It now deletes moved and refreshes list.
 ;;     bmkp-bmenu-copy-marked-to-bookmark-file:
-;;       Added arg MOVEP.  If move, delete before refresh list (deletes bmks returned in IMPORTED). 
+;;       Added arg MOVEP.  If move, delete before refresh list (deletes bmks returned in IMPORTED).
 ;; 2015/06/26 dadams
 ;;     Added: bmkp-bmenu-mark-function-bookmarks, bmkp-bmenu-show-only-function-bookmarks.
 ;;            Bound the to Q M and Q S.  Added to bmkp-bmenu-show-types-menu.
@@ -1691,7 +1691,7 @@
 ;;       Toggle menu:
 ;;         Moved Toggle menu higher.
 ;;         Moved bmkp-toggle-save-desktop-before-switching with other autosaving menu items.
-;;         Added bmkp-toggle-auto-light-when-jump-menu.  
+;;         Added bmkp-toggle-auto-light-when-jump-menu.
 ;;         Moved temporary bookmark stuff lower, after display-list stuff.
 ;;         bmkp-toggle-saving-menu-list-state: Corrected help text - affects also being able to save.
 ;;       Moved bmkp-list-defuns-in-commands-file with other help stuff.
@@ -2216,12 +2216,12 @@
 ;;     Replace W3M by URL in menu items.
 ;; 2010/07/14 dadams
 ;;     Created from bookmark+.el code.
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+-doc.el'")
 ;;
 ;; 2020/07/04 dadams
 ;;     Changed all references to `C-x p' to `C-x x'.
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+-key.el'")
 ;;
 ;; 2021/02/12 dadams
@@ -2410,7 +2410,7 @@
 ;; 2011/04/01 dadams
 ;;     Added to bmkp-jump-menu: bmkp-(dired|file)-this-dir-jump-other-window.
 ;;     Created from code in bookmark+-1.el.
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+-lit.el'")
 ;;
 ;; 2021/04/16 dadams
@@ -2511,7 +2511,7 @@
 ;;       Use *-refresh-menu-list, not *-surreptitiously-*.
 ;; 2010/07/01 dadams
 ;;     Created.
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+-mac.el'")
 ;;
 ;; **************************************************************************************************
@@ -2570,7 +2570,7 @@
 ;;     Removed eval-when-compile for bookmark+-(bmu|1).el.
 ;; 2010/08/15 dadams
 ;;     Created, from code in other Bookmark+ files.
- 
+
 ;;;(@* "CHANGE LOG FOR `bookmark+.el'")
 ;;
 ;; 2021/04/18 dadams
@@ -3451,7 +3451,7 @@
 ;;                  Fix increment visit fn.  Allow sorting by last visited.
 ;;                  When visit values are equal, sort with string-lessp.
 ;;                  Add TIME bookmark-alist entry.  *-make-record-default: Add time entry.
-;;                  Fix: bad parens, errors in sorting predicate.  Rename fns.  
+;;                  Fix: bad parens, errors in sorting predicate.  Rename fns.
 ;;                  Use single fn to sort using diff methods.
 ;;                  Add: *-bmenu-refresh-alist (bind to g).
 ;;       2009-09-16 Add: *-toggle-sorting-by-most-visited, *-reset-visit-flag,
@@ -3508,7 +3508,7 @@
 ;;       2009-09-02 Add: *-non-file-filename.  *-fix-bookmark-alist-and-save: Fix msg.
 ;;                  Require cl (gensym).  *-at-bol/eol' -> line-*-position (for Emacs 20).
 ;;                  Redefine *-bmenu-execute-deletions,
-;;                           *-bmenu-surreptitiously-rebuild-list. 
+;;                           *-bmenu-surreptitiously-rebuild-list.
 ;;                  Update current filtered display - do not reload & display all bmks.
 ;;                  Add redefinitions of *-bmenu-rename', *-yank-word to fix vanilla bugs:
 ;;                    *-bmenu-rename: Do not call *-bmenu-list twice.
